@@ -1,0 +1,164 @@
+body {
+    background: grey;
+  
+}
+
+.encabezados {
+    text-align: center;
+    color: orange;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+.botones {
+    background: orange;
+    border-radius: 10px;
+    color: white;
+}
+
+.footer {
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    background: orange;
+}
+
+.footer p {
+    padding-top: 20px;
+}
+
+.cabecera {
+    background: url("./img/cabecera-1.jpeg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 85vh;
+    text-align: center;
+}
+
+.textos-inicio {
+    color: orange;
+    font-weight: bold;
+    padding-top: 300px;
+}
+
+.container-redes {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.acerca-de {
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+@media(max-width:768px){
+    .acerca-de {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .acerca-de p{
+        /* background: red; */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .acerca-de .col-6 {
+        /* background: yellow; */
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+
+    }
+
+    .acerca-de img {
+        padding-bottom: 10px;
+        height: "320";
+        width: "280"
+    }
+
+    span {
+        color: orange;
+    }
+}
+/* ---------------------------------------------------------------------------- */
+
+
+h5 {
+    color: black;
+    font-weight: bold;
+}
+
+p {
+    font-weight: 500;  
+}
+
+.habilidades {
+    padding: 3rem;
+    background-color: var(--primario);
+    position: relative;
+}
+
+.habilidades-contenedor {
+    text-align: center;
+}
+
+.habilidades-contenedor h2 {
+    line-height: 7rem;
+    color: var(--secundario);
+    padding: 0;
+    margin-bottom: 1rem;    
+}
+
+.tecnologias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    /* gap: 2rem;  */
+}
+  
+.tecnologia {
+    text-align: center; 
+}
+
+.tecnologia img {
+    width: auto;
+    height: 5rem;
+    margin-top: 3rem;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tecnologia img:hover {
+    transform: scale(1.6);
+}
+
+.tecnologias h3 {
+    display: block;
+    color: var(--primario);
+} 
+
+.tecnologias-jquery h3 {
+    display: block;
+    color: var(--primario);
+}
+
+@media(min-width:768px){
+    .habilidades {
+        padding: 5rem 0;
+    }
+
+    .habilidades-contenedor h2 {
+        padding: 0 25rem;  
+    }
+
+    .tecnologias {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr); 
+        gap: 2rem; 
+    }
+
+    .tecnologia h3 {
+        color: var(--gris);
+    }
+}
+
