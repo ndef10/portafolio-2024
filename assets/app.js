@@ -22,7 +22,7 @@ console.log("hola mundo");
 
     if (!regex.test(email)) {
             alert ("Correo no es válido");
-    }else {
-        alert(" el correo esta ok")
-    } 
+    }
+
+    alert("Enviando.....")
  });
