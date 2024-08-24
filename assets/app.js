@@ -4,32 +4,25 @@ console.log("hola mundo");
  const formulario = document.getElementById('formulario');
 
  formulario.addEventListener('submit', function(event) {
-     event.preventDefault(); 
+    event.preventDefault(); 
 
-     const nombre = document.getElementById('nombre').value;
-     const email = document.getElementById('email').value;
-     const mensaje =document.getElementById('mensaje').value;
+    const nombre = document.getElementById('nombre').value;
+    const email = document.getElementById('email').value;
+    const mensaje =document.getElementById('mensaje').value;
 
-     console.log('Nombre:', nombre);
-     console.log('Correo Electrónico:', email);
-     console.log('Mensaje:', mensaje);
+    console.log('Nombre:', nombre);
+    console.log('Correo Electrónico:', email);
+    console.log('Mensaje:', mensaje);
 
-    
-
-    if (!nombre) {
-        alert ("Debes ingresar tu nombre para continuar");
+    if (!nombre || !email || !mensaje) {
+        alert ("Debes ingresar todos los campos para continuar");   
     }
 
-    if (!email) {
-        alert ("Debes ingresr un correo electrónico");
-    }
+    const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-    if (!mensaje) {
-        alert ("Debes agregar tu mensaje");
-    }
-
-    const regex = (/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/); 
-    if (!regex.test(email.value)) {
+    if (!regex.test(email)) {
             alert ("Correo no es válido");
-    }
+    }else {
+        alert(" el correo esta ok")
+    } 
  });

@@ -88,7 +88,6 @@ body {
 
 .habilidades {
     padding: 3rem;
-    background-color: var(--primario);
     position: relative;
 }
 
@@ -98,7 +97,6 @@ body {
 
 .habilidades-contenedor h2 {
     line-height: 7rem;
-    color: var(--secundario);
     padding: 0;
     margin-bottom: 1rem;    
 }
@@ -127,12 +125,10 @@ body {
 
 .tecnologias h3 {
     display: block;
-    color: var(--primario);
 } 
 
 .tecnologias-jquery h3 {
     display: block;
-    color: var(--primario);
 }
 
 @media(min-width:768px){
@@ -150,8 +146,5 @@ body {
         gap: 2rem; 
     }
 
-    .tecnologia h3 {
-        color: var(--gris);
-    }
 }
 
