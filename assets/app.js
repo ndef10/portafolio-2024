@@ -15,14 +15,16 @@ console.log("hola mundo");
     console.log('Mensaje:', mensaje);
 
     if (!nombre || !email || !mensaje) {
-        alert ("Debes ingresar todos los campos para continuar");   
+        alert ("Debes ingresar todos los campos para continuar"); 
+        
+        const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+        if (!regex.test(email)) {
+                alert ("Correo no es válido");
+        }
+    } else {
+        alert("Enviando mensaje...")
     }
 
-    const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-
-    if (!regex.test(email)) {
-            alert ("Correo no es válido");
-    }
-
-    alert("Enviando.....")
+    
  });
