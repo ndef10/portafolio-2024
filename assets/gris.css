@@ -85,6 +85,8 @@ body {
         color: orange;
     }
 }
+
+
 /* ---------------------------------------------------------------------------- */
 
 .habilidades {
@@ -133,13 +135,14 @@ body {
 }
 
 @media(min-width:768px){
-    .habilidades {
+    /* .habilidades {
         padding: 5rem 0;
     }
 
     .habilidades-contenedor h2 {
         padding: 0 25rem;  
-    }
+        
+    } */
 
     .tecnologias {
         display: grid;
@@ -147,5 +150,22 @@ body {
         gap: 2rem; 
     }
 
+}
+
+/* ---------------------------------------------------------------------------- */
+
+.tareas {
+    text-align: start;
+    padding-bottom: 150px;
+}
+
+.custom-img {
+    height: 100%;
+    object-fit: cover;
+    transform: scaleX(-1);
+}
+
+.carousel-item {
+    height: 400px;
 }
 
